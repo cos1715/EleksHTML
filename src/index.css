@@ -1,5 +1,142 @@
-/* This is just example */
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
 
-.badClassSelector {
-  color: red;
+body {
+  margin: 0;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: #2f364a;
+}
+
+.header-controls {
+  display: inline-block;
+  padding: 1.9rem 0 1.6rem 2rem;
+}
+
+.red-dot {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.4rem;
+  background-color: #e76847;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.4rem;
+  background-color: #fabf00;
+  border-radius: 50%;
+}
+
+.green-dot {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.4rem;
+  background-color: #52bea6;
+  border-radius: 50%;
+}
+
+.small-dot {
+  display: inline-block;
+  height: 0.4rem;
+  width: 0.4rem;
+  background-color: #19202e;
+  border-radius: 50%;
+}
+
+.app-logo {
+  margin-right: 0.2rem;
+}
+
+.title {
+  display: inline-block;
+  width: 6.5rem;
+  font-size: 1.2rem;
+  line-height: 2.17;
+  color: #78829d;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8rem;
+  margin-right: 1.8rem;
+  width: 16.9rem;
+  height: 1.1rem;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #78829d;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #15a4fa;
+}
+
+.user-name {
+  width: 5.5rem;
+  height: 0.9rem;
+  margin: 0 1.6rem 1.2rem 1.1rem;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #fff;
+}
+
+.user-avatar {
+  width: 3.1rem;
+  height: 3.2rem;
+  margin-left: 1.2rem;
+  border: 0.3rem solid #fff;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.dropdown-menu {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 2.1rem;
+  margin-top: 0.5rem;
+  object-fit: contain;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #fff;
+}
+
+.app-aside {
+  width: 20rem;
+  height: 90rem;
+  background-color: #1f2637;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: #181e2c;
+}
+
+.footer-help {
+  width: 5.5rem;
+  height: 4.5rem;
+  background-color: #1f2637;
 }
