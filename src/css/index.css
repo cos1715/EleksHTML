@@ -151,8 +151,8 @@ body {
 
 .aside-notifications-block {
   justify-content: flex-start;
-  padding-top: 3.7rem;
-  height: 35.3rem;
+  padding-top: 2.5rem;
+  height: 36.5rem;
 }
 
 .aside-notification {
@@ -291,7 +291,8 @@ body {
 }
 
 .book-author {
-  margin: 0.5rem 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
   line-height: 2.17;
   color: var(--color-aside-msg);

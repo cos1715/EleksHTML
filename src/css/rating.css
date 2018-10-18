@@ -25,7 +25,7 @@
 }
 
 .rating>label {
-  color: var(--white);
+  color: var(--color-star-empty);
   float: right;
 }
 

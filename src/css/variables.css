@@ -17,8 +17,8 @@ html {
   --color-aside-border-bottom: #141824;
   --color-btn-add: #f2795a;
   --color-aside-nav-link: #78829d;
-  --color-aside-msg: #6f7d95;
-  --color-text-highlight: #97b3ce;
+  --color-aside-msg: #4f5a6f;
+  --color-text-highlight: #677b92;
   --color-hover: #15a4fa;
   --color-main-header: #eef1f7;
   --color-main-header-title: #444c63;
@@ -26,6 +26,7 @@ html {
   --color-main-header-txt: #8c97b2;
   --color-star: #FFD700;
   --color-star-hover: #ffab00;
+  --color-star-empty: #ddd;
   --color-footer: #181e2c;
   --white: #fff;
 }
