@@ -177,7 +177,7 @@ body {
 
 .app-aside {
   width: 20rem;
-  height: 100vh;
+  height: 95rem;
   background-color: #19202e;
 }
 
@@ -270,7 +270,7 @@ body {
 .aside-notifications-block {
   justify-content: flex-start;
   padding-top: 3.7rem;
-  height: 33rem;
+  height: 35.3rem;
 }
 
 .aside-notification {
