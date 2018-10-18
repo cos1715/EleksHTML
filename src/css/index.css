@@ -1,10 +1,7 @@
-html {
-  font-size: 10px;
-  font-family: 'Roboto', sans-serif;
-}
-
+@import url(./variables.css);
 body {
   margin: 0;
+  padding: 0;
 }
 
 .dot {
@@ -18,7 +15,7 @@ body {
   height: 0.6rem;
   margin-left: 2.5rem;
   margin-right: 1.1rem;
-  background-color: #e64c66;
+  background-color: var(--color-dot-small-red);
 }
 
 .small-yellow-dot {
@@ -26,7 +23,7 @@ body {
   height: 0.6rem;
   margin-left: 2.5rem;
   margin-right: 1.1rem;
-  background-color: #ffab00;
+  background-color: var(--color-dot-small-yellow);
 }
 
 .small-blue-dot {
@@ -34,7 +31,7 @@ body {
   height: 0.6rem;
   margin-left: 2.5rem;
   margin-right: 1.1rem;
-  background-color: #00bfdd;
+  background-color: var(--color-dot-small-blue);
 }
 
 .small-purple-dot {
@@ -42,7 +39,7 @@ body {
   height: 0.6rem;
   margin-left: 2.5rem;
   margin-right: 1.1rem;
-  background-color: #7874cf;
+  background-color: var(--color-dot-small-purple);
 }
 
 .svg-icons {
@@ -62,7 +59,7 @@ body {
 .app-aside {
   width: 20rem;
   height: 95rem;
-  background-color: #19202e;
+  background-color: var(--color-aside);
 }
 
 .aside-add-book {
@@ -70,8 +67,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 12rem;
-  background-color: #1f2637;
-  border-bottom: 0.1rem solid #141824;
+  background-color: var(--color-aside-block);
+  border-bottom: 0.1rem solid var(--color-aside-border-bottom);
 }
 
 .aside-block {
@@ -81,9 +78,9 @@ body {
   flex-direction: column;
   height: 24rem;
   margin-top: 0.4rem;
-  background-color: #1f2637;
-  border-top: 0.1rem solid #78829d25;
-  border-bottom: 0.1rem solid #141824;
+  background-color: var(--color-aside-block);
+  border-top: 0.1rem solid var(--color-aside-border-top);
+  border-bottom: 0.1rem solid var(--color-aside-border-bottom);
 }
 
 .btn-add {
@@ -93,21 +90,22 @@ body {
   width: 16rem;
   height: 4.4rem;
   border-radius: 0.4rem;
-  background-color: #f2795a;
-  border: 0.2rem solid #f2795a;
+  background-color: var(--color-btn-add);
+  border: 0.2rem solid var(--color-btn-add);
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.86;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
+  outline: 0;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
 .btn-add:hover {
-  background-color: #fff;
-  color: #f2795a;
+  background-color: var(--white);
+  color: var(--color-btn-add);
 }
 
 .svg-plus {
@@ -117,7 +115,7 @@ body {
   object-fit: contain;
   font-size: 1.6rem;
   line-height: 1.63;
-  fill: #fff;
+  fill: var(--white);
 }
 
 .nav-blocks {
@@ -125,13 +123,13 @@ body {
   padding: 0.7rem;
   font-size: 1.3rem;
   line-height: 2;
-  color: #78829d;
+  color: var(--color-aside-nav-link);
   cursor: pointer;
 }
 
 .nav-blocks:hover {
-  color: #fff;
-  background-color: #15a4fa;
+  color: var(--white);
+  background-color: var(--color-hover);
 }
 
 .aside-block-text {
@@ -140,11 +138,11 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #78829d;
+  color: var(--color-aside-nav-link);
 }
 
 .nav-blocks:hover .nav-link {
-  color: #fff;
+  color: var(--white);
 }
 
 .aside-readlist {
@@ -164,8 +162,8 @@ body {
 }
 
 .aside-notification:hover {
-  background-color: #1f2637;
-  color: #78829d;
+  background-color: var(--color-aside-block);
+  color: var(--color-aside-nav-link);
   cursor: default;
 }
 
@@ -173,11 +171,11 @@ body {
   width: 12.9rem;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #6f7d95;
+  color: var(--color-aside-msg);
 }
 
 .text-highlight {
-  color: #97b3ce;
+  color: var(--color-text-highlight);
 }
 
 .svg-history {
@@ -193,10 +191,10 @@ body {
   display: inline-block;
   width: 100%;
   height: 7rem;
-  background-color: #eef1f7;
+  background-color: var(--color-main-header);
   font-size: 2.2rem;
   line-height: 1.18;
-  color: #444c63;
+  color: var(--color-main-header-title);
 }
 
 .main-header-text {
@@ -208,8 +206,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 4.9rem;
-  border-top: 0.1rem solid #dadfea;
-  background-color: #eef1f7;
+  border-top: 0.1rem solid var(--color-main-nav);
+  background-color: var(--color-main-header);
 }
 
 .aside-nav-list {
@@ -236,16 +234,16 @@ body {
 .nav-list-item .active-item {
   display: block;
   text-align: center;
-  color: #8c97b2;
+  color: var(--color-main-header-txt);
   font-size: 1.2rem;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-list-item .active-item:hover {
-  color: #fff;
+  color: var(--white);
   border-radius: 1rem;
-  background-color: #97b3ce;
+  background-color: var(--color-text-highlight);
 }
 
 .search-input {
@@ -254,20 +252,20 @@ body {
   border-radius: 1.6rem;
   border: solid 0.1rem rgba(140, 151, 178, 0.4);
   margin-right: 2rem;
-  background-color: #fff;
+  background-color: var(--white);
   box-sizing: border-box;
   font-size: 1.3rem;
-  background-image: url('../images/search.png');
+  background-image: url('../../images/search.png');
   background-position: 95%;
   background-repeat: no-repeat;
   padding: 1rem 2rem;
-  color: #8c97b2;
+  color: var(--color-main-header-txt);
   outline: 0;
 }
 
 .search-input::placeholder {
   font-size: 1.3rem;
-  color: #8c97b2;
+  color: var(--color-main-header-txt);
 }
 
 .article-blocks {
@@ -288,7 +286,7 @@ body {
 .book-title {
   font-size: 1.6rem;
   line-height: 1.63;
-  color: #444c63;
+  color: var(--color-main-header-title);
   margin: 1.5rem 0 0 0;
 }
 
@@ -296,5 +294,5 @@ body {
   margin: 0.5rem 0;
   font-size: 1.2rem;
   line-height: 2.17;
-  color: #6f7d95;
+  color: var(--color-aside-msg);
 }

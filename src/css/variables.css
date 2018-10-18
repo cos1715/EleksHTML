@@ -1,0 +1,31 @@
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  --color-header: #2f364a;
+  --color-dot-red: #e76847;
+  --color-dot-yellow: #fabf00;
+  --color-dot-green: #52bea6;
+  --color-dot-small-red: #e64c66;
+  --color-dot-small-yellow: #ffab00;
+  --color-dot-small-blue: #00bfdd;
+  --color-dot-small-purple: #7874cf;
+  --color-dropdown-menu: #f9f9f9;
+  --color-dropdown-menu-hover: #f1f1f1;
+  --color-aside: #19202e;
+  --color-aside-block: #1f2637;
+  --color-aside-border-top: #78829d25;
+  --color-aside-border-bottom: #141824;
+  --color-btn-add: #f2795a;
+  --color-aside-nav-link: #78829d;
+  --color-aside-msg: #6f7d95;
+  --color-text-highlight: #97b3ce;
+  --color-hover: #15a4fa;
+  --color-main-header: #eef1f7;
+  --color-main-header-title: #444c63;
+  --color-main-nav: #dadfea;
+  --color-main-header-txt: #8c97b2;
+  --color-star: #FFD700;
+  --color-star-hover: #ffab00;
+  --color-footer: #181e2c;
+  --white: #fff;
+}

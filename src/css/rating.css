@@ -1,5 +1,5 @@
+@import url(./variables.css);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-
 .rating {
   border: none;
   float: left;
@@ -25,19 +25,19 @@
 }
 
 .rating>label {
-  color: #ddd;
+  color: var(--white);
   float: right;
 }
 
 .rating>input:checked~label,
 .rating:not(:checked)>label:hover,
 .rating:not(:checked)>label:hover~label {
-  color: #FFD700;
+  color: var(--color-star);
 }
 
 .rating>input:checked+label:hover,
 .rating>input:checked~label:hover,
 .rating>label:hover~input:checked~label,
 .rating>input:checked~label:hover~label {
-  color: #ffab00;
+  color: var(--color-star-hover);
 }
