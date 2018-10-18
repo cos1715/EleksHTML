@@ -103,6 +103,16 @@
   border-radius: 50%;
 }
 
+.svg-icons {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 2.1rem;
+  margin-right: 1.2rem;
+  object-fit: contain;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
 .svg-dropdown-menu {
   width: 1.2rem;
   height: 1.2rem;

@@ -1,0 +1,100 @@
+.app-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 4.5rem;
+    background-color: #181e2c;
+  }
+  
+  .footer-faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    height: 4.5rem;
+    background-color: #1f2637;
+    cursor: pointer;
+  }
+  
+  .svg-footer {
+    width: 1.4rem;
+    height: 1.5rem;
+    object-fit: contain;
+    font-size: 1.6rem;
+    line-height: 1.63;
+    fill: #fff;
+  }
+  
+  .footer-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    height: 4.5rem;
+    background-color: #15a4fa;
+    cursor: pointer;
+  }
+  
+  .footer-faq:hover .svg-footer {
+    -webkit-animation-name: shifting;
+    -webkit-animation-duration: 1s;
+    animation-name: shifting;
+    animation-duration: 1s;
+  }
+  
+  .footer-settings:hover .svg-footer {
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes shifting {
+    0% {
+      width: 1.4rem;
+      height: 1.5rem;
+    }
+    50% {
+      width: 2.4rem;
+      height: 2.5rem;
+    }
+    100% {
+      width: 1.4rem;
+      height: 1.5rem;
+    }
+  }
+  
+  @keyframes shifting {
+    0% {
+      width: 1.4rem;
+      height: 1.5rem;
+    }
+    50% {
+      width: 2.4rem;
+      height: 2.5rem;
+    }
+    100% {
+      width: 1.4rem;
+      height: 1.5rem;
+    }
+  }
+  
+  @-webkit-keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
