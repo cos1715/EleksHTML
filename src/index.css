@@ -177,7 +177,7 @@ body {
 
 .app-aside {
   width: 20rem;
-  height: 90rem;
+  height: 100vh;
   background-color: #19202e;
 }
 
@@ -208,9 +208,9 @@ body {
   align-items: center;
   width: 16rem;
   height: 4.4rem;
-  border: 0;
   border-radius: 0.4rem;
   background-color: #f2795a;
+  border: 0.2rem solid #f2795a;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.86;
@@ -222,7 +222,6 @@ body {
 }
 
 .btn-add:hover {
-  border: 0.2rem solid #f2795a;
   background-color: #fff;
   color: #f2795a;
 }
@@ -255,6 +254,15 @@ body {
   display: inline;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #78829d;
+}
+
+.nav-blocks:hover .nav-link {
+  color: #fff;
+}
+
 .aside-readlist {
   height: 18.1rem;
 }
@@ -262,7 +270,7 @@ body {
 .aside-notifications-block {
   justify-content: flex-start;
   padding-top: 3.7rem;
-  height: 30.5rem;
+  height: 33rem;
 }
 
 .aside-notification {
@@ -320,6 +328,11 @@ body {
   background-color: #eef1f7;
 }
 
+.aside-nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
 .nav-list {
   display: flex;
   justify-content: space-around;
@@ -363,7 +376,7 @@ body {
   background-image: url('../images/search.png');
   background-position: 95%;
   background-repeat: no-repeat;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   color: #8c97b2;
   outline: 0;
 }
@@ -371,6 +384,35 @@ body {
 .search-input::placeholder {
   font-size: 1.3rem;
   color: #8c97b2;
+}
+
+.article-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.book-desc {
+  margin: 3rem 0 0 2rem;
+}
+
+.book-img {
+  border-radius: 0.5rem;
+}
+
+.book-title {
+  font-size: 1.6rem;
+  line-height: 1.63;
+  color: #444c63;
+  margin: 1.5rem 0 0 0;
+}
+
+.book-author {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  line-height: 2.17;
+  color: #6f7d95;
 }
 
 .app-footer {
