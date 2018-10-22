@@ -16,12 +16,6 @@
   background-color: var(--color-aside-block);
 }
 
-.svg-footer {
-  font-size: 1.6rem;
-  line-height: 1.63;
-  color: var(--white);
-}
-
 .footer-settings {
   display: flex;
   justify-content: center;
@@ -31,12 +25,13 @@
   background-color: var(--color-hover);
 }
 
-.footer-settings:hover .svg-footer {
-  animation-name: rotation;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+.svg-footer {
+  font-size: 1.6rem;
+  line-height: 1.63;
+  color: var(--white);
 }
 
+.footer-settings:hover .svg-footer,
 .footer-faq:hover .svg-footer {
   animation-name: rotation;
   animation-duration: 1s;

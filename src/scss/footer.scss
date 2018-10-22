@@ -1,0 +1,53 @@
+@import './variables';
+.app-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 4.5rem;
+  background-color: $footer-color;
+}
+
+@mixin footer-blocks($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 4.5rem;
+  background-color: $color;
+}
+
+.footer-faq {
+  @include footer-blocks($aside-block-color);
+}
+
+.footer-settings {
+  @include footer-blocks($hover-color);
+}
+
+.svg-footer {
+  font-size: 1.6rem;
+  line-height: 1.63;
+  color: $white;
+}
+
+@mixin rotation-animation($anim-name, $sec, $timing-func) {
+  animation-name: $anim-name;
+  animation-duration: $sec;
+  animation-timing-function: $timing-func;
+}
+
+.footer-faq:hover,
+.footer-settings:hover {
+  .svg-footer {
+    @include rotation-animation(rotation, 1s, ease-in-out);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/rating.css">
-    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/scss/index.css">
+    <link rel="stylesheet" href="./src/scss/header.css">
+    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="stylesheet" href="./src/scss/rating.css">
+    <link rel="stylesheet" href="./src/scss/footer.css">
     <title>HTML HOMEWORK</title>
 </head>
 
@@ -20,9 +20,9 @@
 
     <header class="app-header">
         <div class="header-controls">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
+            <span class="dot dot-red pointer"></span>
+            <span class="dot dot-yellow pointer"></span>
+            <span class="dot dot-green pointer"></span>
         </div>
         <div class="app-title">
             <i class="fas fa-book svg-logo"></i>
@@ -56,50 +56,50 @@
         <input type="checkbox" id="aside-toggle" class="aside-toggle-checkbox">
         <aside class="app-aside">
             <div class="aside-add-book">
-                <button class="btn-add">
+                <button class="btn-add pointer">
                     <i class="fas fa-plus svg-plus"></i>
                     <span class="btn-text">add a book</span>
                 </button>
             </div>
-            <div class="aside-block aside-block-toggle">
-                <label for="aside-toggle" class="aside-toggle-lable">
+            <label for="aside-toggle" class="aside-toggle-lable">
+                <div class="aside-block aside-block-toggle pointer">
                     <i id="svg-toggle" class="fas fa-angle-double-right svg-icons"></i>
-                </label>
-            </div>
+                </div>
+            </label>
             <!-- Aside nav -->
             <nav class="aside-block">
                 <ul class="aside-nav-list">
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <i class="fas fa-book svg-icons"></i>
                             <p class="aside-block-text capitalize">now reading</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <i class="fas fa-globe-americas svg-icons"></i>
                             <p class="aside-block-text capitalize">browse</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <i class="fas fa-shopping-cart svg-icons"></i>
                             <p class="aside-block-text capitalize">buy books</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <i class="fas fa-star svg-icons"></i>
                             <p class="aside-block-text capitalize">favorite books</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <i class="fas fa-list svg-icons"></i>
                             <p class="aside-block-text capitalize">wishlist</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <i class="far fa-clock svg-icons"></i>
                             <p class="aside-block-text capitalize">history</p>
@@ -111,25 +111,25 @@
             <!-- Readlist -->
             <nav class="aside-block aside-readlist">
                 <ul class="aside-nav-list">
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <span class="dot dot-small dot-red-small"></span>
                             <p class="aside-block-text capitalize">must read titles</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <span class="dot dot-small dot-yellow-small"></span>
                             <p class="aside-block-text capitalize">best of list</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <span class="dot dot-small dot-blue-small"></span>
                             <p class="aside-block-text capitalize">classic novels</p>
                         </a>
                     </li>
-                    <li class="nav-blocks nav-blocks-hover">
+                    <li class="nav-blocks nav-blocks-hover pointer">
                         <a class="nav-link" href="#">
                             <span class="dot dot-small dot-purple-small"></span>
                             <p class="aside-block-text capitalize">non fiction</p>

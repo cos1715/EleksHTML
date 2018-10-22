@@ -1,18 +1,18 @@
-@import url(./variables.css);
+@import './variables';
 .dot-red-small {
-  background-color: var(--color-dot-small-red);
+  background-color: $dot-small-red;
 }
 
 .dot-yellow-small {
-  background-color: var(--color-dot-small-yellow);
+  background-color: $dot-small-yellow;
 }
 
 .dot-blue-small {
-  background-color: var(--color-dot-small-blue);
+  background-color: $dot-small-blue;
 }
 
 .dot-purple-small {
-  background-color: var(--color-dot-small-purple);
+  background-color: $dot-small-purple;
 }
 
 .svg-icons {
@@ -28,7 +28,7 @@
 
 .app-aside {
   width: 20rem;
-  background-color: var(--color-aside);
+  background-color: $aside-menu-color;
   transition: width 0.25s linear;
 }
 
@@ -37,8 +37,8 @@
   justify-content: center;
   align-items: center;
   height: 12rem;
-  border-bottom: 0.1rem solid var(--color-aside-border-bottom);
-  background-color: var(--color-aside-block);
+  border-bottom: 0.1rem solid $aside-border-bottom-color;
+  background-color: $aside-block-color;
 }
 
 .aside-block {
@@ -48,9 +48,9 @@
   flex-direction: column;
   height: 24rem;
   margin-top: 0.4rem;
-  border-top: 0.1rem solid var(--color-aside-border-top);
-  border-bottom: 0.1rem solid var(--color-aside-border-bottom);
-  background-color: var(--color-aside-block);
+  border-top: 0.1rem solid $aside-border-top-color;
+  border-bottom: 0.1rem solid $aside-border-bottom-color;
+  background-color: $aside-block-color;
 }
 
 .aside-block-toggle {
@@ -72,26 +72,38 @@
   padding: 0.7rem 0;
 }
 
-.aside-toggle-checkbox:checked+.app-aside .btn-add {
-  width: 15rem;
+.aside-toggle-checkbox:checked+.app-aside {
+  .btn-add {
+    width: 15rem;
+  }
 }
 
-.app-main .aside-toggle-checkbox:checked+.app-aside .svg-icons {
-  margin-left: 2.1rem;
-  margin-right: 1.2rem;
+.app-main .aside-toggle-checkbox:checked+.app-aside {
+  .svg-icons {
+    margin-left: 2.1rem;
+    margin-right: 1.2rem;
+  }
 }
 
-.app-main .aside-toggle-checkbox:checked+.app-aside .dot-small {
-  margin-left: 2.5rem;
-  margin-right: 1.2rem;
+.app-main .aside-toggle-checkbox:checked+.app-aside {
+  .dot-small {
+    margin-left: 2.5rem;
+    margin-right: 1.2rem;
+  }
 }
 
-.aside-toggle-checkbox:checked+.app-aside .aside-msg,
-.aside-toggle-checkbox:checked+.app-aside .aside-block-text {
-  display: inline;
-  animation-name: text-opacity-to-one;
-  animation-duration: 1.3s;
-  animation-fill-mode: forwards;
+@mixin animation($name, $sec, $fill-mode) {
+  animation-name: $name;
+  animation-duration: $sec;
+  animation-fill-mode: $fill-mode;
+}
+
+.aside-toggle-checkbox:checked+.app-aside {
+  .aside-msg,
+  .aside-block-text {
+    display: inline;
+    @include animation(text-opacity-to-one, 1.3s, forwards);
+  }
 }
 
 @keyframes text-opacity-to-one {
@@ -103,10 +115,10 @@
   }
 }
 
-.app-main .aside-toggle-checkbox:checked+.app-aside .svg-icons {
-  animation-name: svg-margin;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+.app-main .aside-toggle-checkbox:checked+.app-aside {
+  .svg-icons {
+    @include animation(svg-margin, 1s, forwards);
+  }
 }
 
 @keyframes svg-margin {
@@ -119,10 +131,10 @@
   }
 }
 
-.app-main .aside-toggle-checkbox:checked+.app-aside .dot-small {
-  animation-name: dot-margin;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+.app-main .aside-toggle-checkbox:checked+.app-aside {
+  .dot-small {
+    @include animation(dot-margin, 1s, forwards);
+  }
 }
 
 @keyframes dot-margin {
@@ -135,10 +147,12 @@
   }
 }
 
-.aside-toggle-checkbox:checked+.app-aside .aside-toggle-lable .svg-aside-toggle {
-  animation-name: arrow-toggle-open;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+.aside-toggle-checkbox:checked+.app-aside {
+  .aside-toggle-lable {
+    .svg-aside-toggle {
+      @include animation(arrow-toggle-open, 1s, forwards);
+    }
+  }
 }
 
 @keyframes arrow-toggle-open {
@@ -156,22 +170,22 @@
   align-items: center;
   width: 16rem;
   height: 4.4rem;
-  border: 0.2rem solid var(--color-btn-add);
+  border: 0.2rem solid $btn-add-color;
   border-radius: 0.4rem;
   outline: 0;
-  background-color: var(--color-btn-add);
+  background-color: $btn-add-color;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.86;
   text-align: center;
-  color: var(--white);
+  color: $white;
   text-transform: uppercase;
   transition: all 0.4s linear;
 }
 
 .btn-add:hover {
-  background-color: var(--white);
-  color: var(--color-btn-add);
+  background-color: $white;
+  color: $btn-add-color;
 }
 
 .svg-plus {
@@ -186,23 +200,21 @@
   padding: 0.7rem;
   font-size: 1.3rem;
   line-height: 2;
-  color: var(--color-aside-nav-link);
+  color: $aside-nav-link-color;
 }
 
 .nav-blocks-hover:hover {
-  animation-name: hover-effects;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  @include animation(hover-effects, 1s, forwards);
 }
 
 @keyframes hover-effects {
   from {
-    background-color: var(--color-aside-block);
-    color: var(--color-aside-nav-link);
+    background-color: $aside-block-color;
+    color: $aside-nav-link-color;
   }
   to {
-    background-color: var(--color-hover);
-    color: var(--white);
+    background-color: $hover-color;
+    color: $white;
   }
 }
 
@@ -210,7 +222,7 @@
   display: inline;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 830px) {
   .svg-plus {
     margin: 0;
   }
@@ -219,14 +231,12 @@
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 740px) {
   .app-aside {
     width: 5rem;
   }
   .svg-aside-toggle {
-    animation-name: arrow-toggle-close;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    @include animation(arrow-toggle-close, 1s, forwards);
   }
   .nav-blocks {
     display: flex;
@@ -244,7 +254,7 @@
   .aside-block-toggle {
     display: flex;
     height: 5rem;
-    color: var(--color-aside-nav-link);
+    color: $aside-nav-link-color;
   }
   .svg-history {
     margin-bottom: 1.5rem;
@@ -266,11 +276,11 @@
 
 .nav-link {
   text-decoration: none;
-  color: var(--color-aside-nav-link);
+  color: $aside-nav-link-color;
 }
 
 .nav-blocks:hover .nav-link {
-  color: var(--white);
+  color: $white;
 }
 
 .aside-readlist {
@@ -294,11 +304,11 @@
   margin-top: 0.5rem;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: var(--color-aside-msg);
+  color: $aside-msg-color;
 }
 
 .text-highlight {
-  color: var(--color-text-highlight);
+  color: $text-highlight-color;
 }
 
 .main-section {
@@ -309,10 +319,10 @@
   display: inline-block;
   width: 100%;
   height: 7rem;
-  background-color: var(--color-main-header);
+  background-color: $main-header-color;
   font-size: 2.2rem;
   line-height: 1.18;
-  color: var(--color-main-header-title);
+  color: $main-header-title-color;
 }
 
 .main-header-text {
@@ -324,8 +334,8 @@
   justify-content: space-between;
   align-items: center;
   height: 4.9rem;
-  border-top: 0.1rem solid var(--color-main-nav);
-  background-color: var(--color-main-header);
+  border-top: 0.1rem solid $main-nav-color;
+  background-color: $main-header-color;
 }
 
 @media screen and (max-width: 725px) {
@@ -354,7 +364,7 @@
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  color: var(--color-main-header-txt);
+  color: $main-header-txt-color;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
@@ -362,8 +372,8 @@
 }
 
 .active-item:hover {
-  background-color: var(--color-text-highlight);
-  color: var(--white);
+  background-color: $text-highlight-color;
+  color: $white;
 }
 
 .search-input {
@@ -373,14 +383,14 @@
   padding: 1rem 2rem;
   box-sizing: border-box;
   border-radius: 1.6rem;
-  border: solid 0.1rem rgba(140, 151, 178, 0.4);
+  border: solid 0.1rem $search-input-border-color;
   outline: 0;
-  background-color: var(--white);
+  background-color: $white;
   background-image: url('../../images/search.png');
   background-position: 95%;
   background-repeat: no-repeat;
   font-size: 1.3rem;
-  color: var(--color-main-header-txt);
+  color: $main-header-txt-color;
   transition: width 0.25s linear;
 }
 
@@ -404,8 +414,8 @@
   .search-form {
     display: flex;
     justify-content: center;
-    border-top: 0.1rem solid var(--color-main-nav);
-    background-color: var(--color-main-header);
+    border-top: 0.1rem solid $main-nav-color;
+    background-color: $main-header-color;
   }
   .search-input {
     width: 90%;
@@ -416,7 +426,7 @@
 
 .search-input::placeholder {
   font-size: 1.3rem;
-  color: var(--color-main-header-txt);
+  color: $main-header-txt-color;
 }
 
 .article-blocks {
@@ -438,9 +448,11 @@
   }
 }
 
-@media screen and (max-width: 530px) {
-  .article-blocks .book-desc {
-    margin-left: 0;
+@media screen and (max-width: 53px) {
+  .article-blocks {
+    .book-desc {
+      margin-left: 0;
+    }
   }
 }
 
@@ -457,7 +469,7 @@
   margin: 1.5rem 0 0 0;
   font-size: 1.6rem;
   line-height: 1.63;
-  color: var(--color-main-header-title);
+  color: $main-header-title-color;
 }
 
 .book-author {
@@ -465,5 +477,5 @@
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   line-height: 2.17;
-  color: var(--color-aside-msg);
+  color: $aside-msg-color;
 }

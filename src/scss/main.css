@@ -1,0 +1,639 @@
+.dot-red-small {
+  background-color: #e64c66;
+}
+
+.dot-yellow-small {
+  background-color: #ffab00;
+}
+
+.dot-blue-small {
+  background-color: #00bfdd;
+}
+
+.dot-purple-small {
+  background-color: #7874cf;
+}
+
+.svg-icons {
+  margin-left: 2.1rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.app-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app-aside {
+  width: 20rem;
+  background-color: #19202e;
+  -webkit-transition: width 0.25s linear;
+  transition: width 0.25s linear;
+}
+
+.aside-add-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12rem;
+  border-bottom: 0.1rem solid #141824;
+  background-color: #1f2637;
+}
+
+.aside-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 24rem;
+  margin-top: 0.4rem;
+  border-top: 0.1rem solid #78829d25;
+  border-bottom: 0.1rem solid #141824;
+  background-color: #1f2637;
+}
+
+.aside-block-toggle {
+  display: none;
+}
+
+.aside-toggle-checkbox {
+  display: none;
+}
+
+.aside-toggle-checkbox:checked + .app-aside {
+  width: 20rem;
+}
+
+.aside-toggle-checkbox:checked + .app-aside .nav-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 20rem;
+  padding: 0.7rem 0;
+}
+
+.aside-toggle-checkbox:checked + .app-aside .btn-add {
+  width: 15rem;
+}
+
+.app-main .aside-toggle-checkbox:checked + .app-aside .svg-icons {
+  margin-left: 2.1rem;
+  margin-right: 1.2rem;
+}
+
+.app-main .aside-toggle-checkbox:checked + .app-aside .dot-small {
+  margin-left: 2.5rem;
+  margin-right: 1.2rem;
+}
+
+.aside-toggle-checkbox:checked + .app-aside .aside-msg,
+.aside-toggle-checkbox:checked + .app-aside .aside-block-text {
+  display: inline;
+  -webkit-animation-name: text-opacity-to-one;
+          animation-name: text-opacity-to-one;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes text-opacity-to-one {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text-opacity-to-one {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app-main .aside-toggle-checkbox:checked + .app-aside .svg-icons {
+  -webkit-animation-name: svg-margin;
+          animation-name: svg-margin;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes svg-margin {
+  from {
+    margin: 0;
+  }
+  to {
+    margin-left: 2.1rem;
+    margin-right: 1.2rem;
+  }
+}
+
+@keyframes svg-margin {
+  from {
+    margin: 0;
+  }
+  to {
+    margin-left: 2.1rem;
+    margin-right: 1.2rem;
+  }
+}
+
+.app-main .aside-toggle-checkbox:checked + .app-aside .dot-small {
+  -webkit-animation-name: dot-margin;
+          animation-name: dot-margin;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dot-margin {
+  from {
+    margin: 0;
+  }
+  to {
+    margin-left: 2.5rem;
+    margin-right: 1.2rem;
+  }
+}
+
+@keyframes dot-margin {
+  from {
+    margin: 0;
+  }
+  to {
+    margin-left: 2.5rem;
+    margin-right: 1.2rem;
+  }
+}
+
+.aside-toggle-checkbox:checked + .app-aside .aside-toggle-lable .svg-aside-toggle {
+  -webkit-animation-name: arrow-toggle-open;
+          animation-name: arrow-toggle-open;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes arrow-toggle-open {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes arrow-toggle-open {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.btn-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16rem;
+  height: 4.4rem;
+  border: 0.2rem solid #f2795a;
+  border-radius: 0.4rem;
+  outline: 0;
+  background-color: #f2795a;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.86;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.btn-add:hover {
+  background-color: #fff;
+  color: #f2795a;
+}
+
+.svg-plus {
+  width: 1.3rem;
+  margin-right: 1.9rem;
+  font-size: 1.6rem;
+  line-height: 1.63;
+}
+
+.nav-blocks {
+  width: 18.5rem;
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #78829d;
+}
+
+.nav-blocks-hover:hover {
+  -webkit-animation-name: hover-effects;
+          animation-name: hover-effects;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hover-effects {
+  from {
+    background-color: #1f2637;
+    color: #78829d;
+  }
+  to {
+    background-color: #15a4fa;
+    color: #fff;
+  }
+}
+
+@keyframes hover-effects {
+  from {
+    background-color: #1f2637;
+    color: #78829d;
+  }
+  to {
+    background-color: #15a4fa;
+    color: #fff;
+  }
+}
+
+.aside-block-text {
+  display: inline;
+}
+
+@media screen and (max-width: 830px) {
+  .svg-plus {
+    margin: 0;
+  }
+  .btn-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .app-aside {
+    width: 5rem;
+  }
+  .svg-aside-toggle {
+    -webkit-animation-name: arrow-toggle-close;
+            animation-name: arrow-toggle-close;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .nav-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 5rem;
+    padding: 0.7rem 0;
+  }
+  .btn-add {
+    width: 4rem;
+  }
+  .dot-small,
+  .svg-icons {
+    margin: 0;
+  }
+  .aside-block-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+    color: #78829d;
+  }
+  .svg-history {
+    margin-bottom: 1.5rem;
+  }
+  .aside-msg,
+  .aside-block-text {
+    display: none;
+  }
+}
+
+@-webkit-keyframes arrow-toggle-close {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes arrow-toggle-close {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #78829d;
+}
+
+.nav-blocks:hover .nav-link {
+  color: #fff;
+}
+
+.aside-readlist {
+  height: 18rem;
+}
+
+.aside-notifications-block {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 36.5rem;
+  padding-top: 2.5rem;
+}
+
+.aside-notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+}
+
+.aside-msg {
+  width: 12.9rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #4f5a6f;
+}
+
+.text-highlight {
+  color: #677b92;
+}
+
+.main-section {
+  width: 100%;
+}
+
+.main-header {
+  display: inline-block;
+  width: 100%;
+  height: 7rem;
+  background-color: #eef1f7;
+  font-size: 2.2rem;
+  line-height: 1.18;
+  color: #444c63;
+}
+
+.main-header-text {
+  padding-left: 2.3rem;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.9rem;
+  border-top: 0.1rem solid #dadfea;
+  background-color: #eef1f7;
+}
+
+@media screen and (max-width: 725px) {
+  .main-nav {
+    display: block;
+  }
+}
+
+.aside-nav-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.5rem;
+  height: 4.9rem;
+  margin: 0 0 0 2rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.active-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #8c97b2;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.active-item:hover {
+  background-color: #677b92;
+  color: #fff;
+}
+
+.search-input {
+  width: 40rem;
+  height: 3.2rem;
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.6rem;
+  border: solid 0.1rem rgba(140, 151, 178, 0.4);
+  outline: 0;
+  background-color: #fff;
+  background-image: url("../../images/search.png");
+  background-position: 95%;
+  background-repeat: no-repeat;
+  font-size: 1.3rem;
+  color: #8c97b2;
+  -webkit-transition: width 0.25s linear;
+  transition: width 0.25s linear;
+}
+
+@media screen and (max-width: 1078px) {
+  .search-input {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .main-header-text {
+    padding: 0;
+    text-align: center;
+  }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 0.1rem solid #dadfea;
+    background-color: #eef1f7;
+  }
+  .search-input {
+    width: 90%;
+    min-width: 15rem;
+    margin: 1.5rem;
+  }
+}
+
+.search-input::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  color: #8c97b2;
+}
+
+.search-input:-ms-input-placeholder {
+  font-size: 1.3rem;
+  color: #8c97b2;
+}
+
+.search-input::-ms-input-placeholder {
+  font-size: 1.3rem;
+  color: #8c97b2;
+}
+
+.search-input::placeholder {
+  font-size: 1.3rem;
+  color: #8c97b2;
+}
+
+.article-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 725px) {
+  .article-blocks {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .article-blocks {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 53px) {
+  .article-blocks .book-desc {
+    margin-left: 0;
+  }
+}
+
+.book-desc {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.book-img {
+  border-radius: 0.5rem;
+}
+
+.book-title {
+  margin: 1.5rem 0 0 0;
+  font-size: 1.6rem;
+  line-height: 1.63;
+  color: #444c63;
+}
+
+.book-author {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 2.17;
+  color: #4f5a6f;
+}
+/*# sourceMappingURL=main.css.map */
