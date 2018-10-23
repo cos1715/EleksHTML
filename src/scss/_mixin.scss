@@ -1,6 +1,9 @@
-@mixin dots($height, $width, $margin-right, $color) {
+@mixin dots($height, $width, $margin-left, $margin-right, $color) {
+  display: inline-block;
+  border-radius: 50%;
   height: $height;
   width: $width;
+  margin-left: $margin-left;
   margin-right: $margin-right;
   background-color: $color;
 }

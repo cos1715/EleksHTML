@@ -1,16 +1,40 @@
 .dot-red-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #e64c66;
 }
 
 .dot-yellow-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #ffab00;
 }
 
 .dot-blue-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #00bfdd;
 }
 
 .dot-purple-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #7874cf;
 }
 
@@ -534,7 +558,7 @@
   transition: width 0.25s linear;
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 1080px) {
   .search-input {
     width: 15rem;
   }
@@ -619,7 +643,7 @@
   }
 }
 
-@media screen and (max-width: 53px) {
+@media screen and (max-width: 530px) {
   .article-blocks .book-desc {
     margin-left: 0;
   }

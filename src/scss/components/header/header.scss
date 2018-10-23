@@ -1,5 +1,5 @@
-@import '../../variables';
-@import '../../mixin/mixin';
+@import '../../_variables';
+@import '../../_mixin';
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -14,19 +14,19 @@
 }
 
 .dot-red {
-  @include dots(1rem, 1rem, 0.4rem, $dot-red);
+  @include dots(1rem, 1rem, 0, 0.4rem, $dot-red);
 }
 
 .dot-yellow {
-  @include dots(1rem, 1rem, 0.4rem, $dot-yellow);
+  @include dots(1rem, 1rem, 0, 0.4rem, $dot-yellow);
 }
 
 .dot-green {
-  @include dots(1rem, 1rem, 0.4rem, $dot-green);
+  @include dots(1rem, 1rem, 0, 0.4rem, $dot-green);
 }
 
 .dot-black-small {
-  @include dots(0.4rem, 0.4rem, 0, $aside-menu-color);
+  @include dots(0.4rem, 0.4rem, 0, 0, $aside-menu-color);
 }
 
 .svg-logo {
