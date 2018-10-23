@@ -1,10 +1,11 @@
-@import url(./variables.css);
+@import '../../_variables';
+@import '../../_mixin';
 .app-header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 4.5rem;
-  background-color: var(--color-header);
+  background-color: $header-color;
 }
 
 .header-controls {
@@ -13,30 +14,19 @@
 }
 
 .dot-red {
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.4rem;
-  background-color: var(--color-dot-red);
+  @include dots(1rem, 1rem, 0, 0.4rem, $dot-red);
 }
 
 .dot-yellow {
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.4rem;
-  background-color: var(--color-dot-yellow);
+  @include dots(1rem, 1rem, 0, 0.4rem, $dot-yellow);
 }
 
 .dot-green {
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.4rem;
-  background-color: var(--color-dot-green);
+  @include dots(1rem, 1rem, 0, 0.4rem, $dot-green);
 }
 
 .dot-black-small {
-  height: 0.4rem;
-  width: 0.4rem;
-  background-color: var(--color-aside);
+  @include dots(0.4rem, 0.4rem, 0, 0, $aside-menu-color);
 }
 
 .svg-logo {
@@ -45,7 +35,7 @@
   margin-right: 0.2rem;
   font-size: 1.3rem;
   line-height: 2;
-  color: var(--color-aside-nav-link);
+  color: $aside-nav-link-color;
 }
 
 .title {
@@ -53,7 +43,7 @@
   width: 6.5rem;
   font-size: 1.2rem;
   line-height: 2.17;
-  color: var(--color-aside-nav-link);
+  color: $aside-nav-link-color;
 }
 
 .header-info {
@@ -71,10 +61,10 @@
   margin-right: 1.8rem;
   font-size: 1.3rem;
   line-height: 2;
-  color: var(--color-aside-nav-link);
+  color: $aside-nav-link-color;
 }
 
-@media screen and (max-width: 53rem) {
+@media screen and (max-width: 530px) {
   .app-title,
   .header-contacts {
     display: none;
@@ -86,7 +76,7 @@
   justify-content: space-around;
   align-items: center;
   height: 4.5rem;
-  background-color: var(--color-hover);
+  background-color: $hover-color;
 }
 
 .user-name {
@@ -95,14 +85,14 @@
   margin: 0 1.6rem 1.2rem 1.1rem;
   font-size: 1.3rem;
   line-height: 2;
-  color: var(--white);
+  color: $white;
 }
 
 .img-user-avatar {
   width: 3rem;
   height: 3rem;
   margin-left: 1.2rem;
-  border: 0.3rem solid var(--white);
+  border: 0.3rem solid $white;
   border-radius: 50%;
 }
 
@@ -110,7 +100,7 @@
   margin-right: 2.1rem;
   margin-top: 0.5rem;
   font-size: 1.3rem;
-  color: var(--white);
+  color: $white;
 }
 
 .dropdown-menu {
@@ -128,7 +118,7 @@
   right: 0;
   z-index: 1;
   width: 16.4rem;
-  background-color: var(--color-dropdown-menu);
+  background-color: $dropdown-menu-color;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -141,14 +131,12 @@
 }
 
 .dropdown-link:hover {
-  background-color: var(--color-dropdown-menu-hover);
+  background-color: $dropdown-menu-hover-color;
 }
 
 .dropdown-animation {
   display: block;
-  animation-name: dropdown-opacity-to-zero;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  @include animation(dropdown-opacity-to-zero, 1s, forwards, ease);
 }
 
 @keyframes dropdown-opacity-to-zero {
@@ -162,9 +150,7 @@
 
 .dropdown-menu:checked~.dropdown-content {
   display: block;
-  animation-name: dropdown-opacity-to-one;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  @include animation(dropdown-opacity-to-one, 1s, forwards, ease);
 }
 
 @keyframes dropdown-opacity-to-one {
@@ -177,9 +163,7 @@
 }
 
 .arrow-rotation {
-  animation-name: arrow-rotation-down;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  @include animation(arrow-rotation-down, 1s, forwards, ease);
 }
 
 @keyframes arrow-rotation-down {
@@ -192,9 +176,7 @@
 }
 
 .dropdown-menu:checked~.dropbtn .svg-dropdown-menu {
-  animation-name: arrow-rotation-up;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  @include animation(arrow-rotation-up, 1s, forwards, ease);
 }
 
 @keyframes arrow-rotation-up {

@@ -1,0 +1,25 @@
+@mixin dots($height, $width, $margin-left, $margin-right, $color) {
+  display: inline-block;
+  border-radius: 50%;
+  height: $height;
+  width: $width;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+  background-color: $color;
+}
+
+@mixin animation($name, $sec, $fill-mode, $timing-func) {
+  animation-name: $name;
+  animation-duration: $sec;
+  animation-fill-mode: $fill-mode;
+  animation-timing-function: $timing-func;
+}
+
+@mixin footer-blocks($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  height: 4.5rem;
+  background-color: $color;
+}

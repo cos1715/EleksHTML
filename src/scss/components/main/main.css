@@ -1,16 +1,40 @@
 .dot-red-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #e64c66;
 }
 
 .dot-yellow-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #ffab00;
 }
 
 .dot-blue-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #00bfdd;
 }
 
 .dot-purple-small {
+  display: inline-block;
+  border-radius: 50%;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-left: 2.5rem;
+  margin-right: 1.1rem;
   background-color: #7874cf;
 }
 
@@ -116,6 +140,8 @@
           animation-duration: 1.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes text-opacity-to-one {
@@ -143,6 +169,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes svg-margin {
@@ -172,6 +200,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes dot-margin {
@@ -201,6 +231,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes arrow-toggle-open {
@@ -278,6 +310,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes hover-effects {
@@ -307,11 +341,11 @@
 }
 
 @media screen and (max-width: 830px) {
-  .svg-plus {
-    margin: 0;
-  }
   .btn-text {
     display: none;
+  }
+  .svg-plus {
+    margin: 0;
   }
 }
 
@@ -326,6 +360,8 @@
             animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
   }
   .nav-blocks {
     display: -webkit-box;
@@ -522,7 +558,7 @@
   transition: width 0.25s linear;
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 1080px) {
   .search-input {
     width: 15rem;
   }
@@ -607,7 +643,7 @@
   }
 }
 
-@media screen and (max-width: 53px) {
+@media screen and (max-width: 530px) {
   .article-blocks .book-desc {
     margin-left: 0;
   }

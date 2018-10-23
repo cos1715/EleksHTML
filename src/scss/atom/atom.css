@@ -1,0 +1,12 @@
+.pointer {
+  cursor: pointer;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+/*# sourceMappingURL=atom.css.map */

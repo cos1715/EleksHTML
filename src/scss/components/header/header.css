@@ -16,29 +16,41 @@
 }
 
 .dot-red {
+  display: inline-block;
+  border-radius: 50%;
   height: 1rem;
   width: 1rem;
+  margin-left: 0;
   margin-right: 0.4rem;
   background-color: #e76847;
 }
 
 .dot-yellow {
+  display: inline-block;
+  border-radius: 50%;
   height: 1rem;
   width: 1rem;
+  margin-left: 0;
   margin-right: 0.4rem;
   background-color: #fabf00;
 }
 
 .dot-green {
+  display: inline-block;
+  border-radius: 50%;
   height: 1rem;
   width: 1rem;
+  margin-left: 0;
   margin-right: 0.4rem;
   background-color: #52bea6;
 }
 
 .dot-black-small {
+  display: inline-block;
+  border-radius: 50%;
   height: 0.4rem;
   width: 0.4rem;
+  margin-left: 0;
   margin-right: 0;
   background-color: #19202e;
 }
@@ -173,6 +185,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes dropdown-opacity-to-zero {
@@ -201,6 +215,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes dropdown-opacity-to-one {
@@ -228,6 +244,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes arrow-rotation-down {
@@ -259,6 +277,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes arrow-rotation-up {

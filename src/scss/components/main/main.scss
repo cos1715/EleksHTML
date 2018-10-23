@@ -1,18 +1,19 @@
-@import './variables';
+@import '../../_variables';
+@import '../../_mixin';
 .dot-red-small {
-  background-color: $dot-small-red;
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-red);
 }
 
 .dot-yellow-small {
-  background-color: $dot-small-yellow;
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-yellow);
 }
 
 .dot-blue-small {
-  background-color: $dot-small-blue;
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-blue);
 }
 
 .dot-purple-small {
-  background-color: $dot-small-purple;
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-purple);
 }
 
 .svg-icons {
@@ -92,17 +93,11 @@
   }
 }
 
-@mixin animation($name, $sec, $fill-mode) {
-  animation-name: $name;
-  animation-duration: $sec;
-  animation-fill-mode: $fill-mode;
-}
-
 .aside-toggle-checkbox:checked+.app-aside {
   .aside-msg,
   .aside-block-text {
     display: inline;
-    @include animation(text-opacity-to-one, 1.3s, forwards);
+    @include animation(text-opacity-to-one, 1.3s, forwards, ease);
   }
 }
 
@@ -117,7 +112,7 @@
 
 .app-main .aside-toggle-checkbox:checked+.app-aside {
   .svg-icons {
-    @include animation(svg-margin, 1s, forwards);
+    @include animation(svg-margin, 1s, forwards, ease);
   }
 }
 
@@ -133,7 +128,7 @@
 
 .app-main .aside-toggle-checkbox:checked+.app-aside {
   .dot-small {
-    @include animation(dot-margin, 1s, forwards);
+    @include animation(dot-margin, 1s, forwards, ease);
   }
 }
 
@@ -150,7 +145,7 @@
 .aside-toggle-checkbox:checked+.app-aside {
   .aside-toggle-lable {
     .svg-aside-toggle {
-      @include animation(arrow-toggle-open, 1s, forwards);
+      @include animation(arrow-toggle-open, 1s, forwards, ease);
     }
   }
 }
@@ -204,7 +199,7 @@
 }
 
 .nav-blocks-hover:hover {
-  @include animation(hover-effects, 1s, forwards);
+  @include animation(hover-effects, 1s, forwards, ease);
 }
 
 @keyframes hover-effects {
@@ -223,11 +218,11 @@
 }
 
 @media screen and (max-width: 830px) {
-  .svg-plus {
-    margin: 0;
-  }
   .btn-text {
     display: none;
+  }
+  .svg-plus {
+    margin: 0;
   }
 }
 
@@ -236,7 +231,7 @@
     width: 5rem;
   }
   .svg-aside-toggle {
-    @include animation(arrow-toggle-close, 1s, forwards);
+    @include animation(arrow-toggle-close, 1s, forwards, ease);
   }
   .nav-blocks {
     display: flex;
@@ -394,7 +389,7 @@
   transition: width 0.25s linear;
 }
 
-@media screen and (max-width: 1078px) {
+@media screen and (max-width: 1080px) {
   .search-input {
     width: 15rem;
   }
@@ -448,7 +443,7 @@
   }
 }
 
-@media screen and (max-width: 53px) {
+@media screen and (max-width: 530px) {
   .article-blocks {
     .book-desc {
       margin-left: 0;
