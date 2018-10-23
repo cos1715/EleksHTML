@@ -52,6 +52,8 @@
           animation-name: rotation;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }

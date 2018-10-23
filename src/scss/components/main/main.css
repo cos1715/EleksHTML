@@ -116,6 +116,8 @@
           animation-duration: 1.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes text-opacity-to-one {
@@ -143,6 +145,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes svg-margin {
@@ -172,6 +176,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes dot-margin {
@@ -201,6 +207,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes arrow-toggle-open {
@@ -278,6 +286,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes hover-effects {
@@ -307,11 +317,11 @@
 }
 
 @media screen and (max-width: 830px) {
-  .svg-plus {
-    margin: 0;
-  }
   .btn-text {
     display: none;
+  }
+  .svg-plus {
+    margin: 0;
   }
 }
 
@@ -326,6 +336,8 @@
             animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
   }
   .nav-blocks {
     display: -webkit-box;

@@ -173,6 +173,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes dropdown-opacity-to-zero {
@@ -201,6 +203,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes dropdown-opacity-to-one {
@@ -228,6 +232,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes arrow-rotation-down {
@@ -259,6 +265,8 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @-webkit-keyframes arrow-rotation-up {
