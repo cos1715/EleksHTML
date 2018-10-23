@@ -14,15 +14,15 @@
 }
 
 .dot-red {
-  @include dots(1rem, 1rem, 0, 0.4rem, $dot-red);
+  @include dots(1rem, 1rem, 0, 0.4rem, map-get($dots-color, "dot-red"));
 }
 
 .dot-yellow {
-  @include dots(1rem, 1rem, 0, 0.4rem, $dot-yellow);
+  @include dots(1rem, 1rem, 0, 0.4rem, map-get($dots-color, "dot-yellow"));
 }
 
 .dot-green {
-  @include dots(1rem, 1rem, 0, 0.4rem, $dot-green);
+  @include dots(1rem, 1rem, 0, 0.4rem, map-get($dots-color, "dot-green"));
 }
 
 .dot-black-small {
@@ -118,7 +118,7 @@
   right: 0;
   z-index: 1;
   width: 16.4rem;
-  background-color: $dropdown-menu-color;
+  background-color: map-get($dropdown-menu, "menu-color");
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -131,7 +131,7 @@
 }
 
 .dropdown-link:hover {
-  background-color: $dropdown-menu-hover-color;
+  background-color: map-get($dropdown-menu, "menu-hover-color");
 }
 
 .dropdown-animation {

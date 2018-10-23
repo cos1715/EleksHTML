@@ -1,4 +1,4 @@
-@import '../../variables';
+@import '../../_variables';
 @import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 .rating {
   border: none;
@@ -25,19 +25,19 @@
 }
 
 .rating>label {
-  color: $star-empty-color;
+  color: map-get($star-colors, "star-empty-color");
   float: right;
 }
 
 .rating>input:checked~label,
 .rating:not(:checked)>label:hover,
 .rating:not(:checked)>label:hover~label {
-  color: $star-color;
+  color: map-get($star-colors, "star-color");
 }
 
 .rating>input:checked+label:hover,
 .rating>input:checked~label:hover,
 .rating>label:hover~input:checked~label,
 .rating>input:checked~label:hover~label {
-  color: $star-hover-color;
+  color: map-get($star-colors, "star-hover-color");
 }
