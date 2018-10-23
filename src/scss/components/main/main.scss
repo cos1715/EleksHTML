@@ -1,19 +1,25 @@
 @import '../../_variables';
 @import '../../_mixin';
+%flex-markup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .dot-red-small {
-  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-red);
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, map-get($dots-color, "dot-small-red"));
 }
 
 .dot-yellow-small {
-  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-yellow);
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, map-get($dots-color, "dot-small-yellow"));
 }
 
 .dot-blue-small {
-  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-blue);
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, map-get($dots-color, "dot-small-blue"));
 }
 
 .dot-purple-small {
-  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, $dot-small-purple);
+  @include dots(0.6rem, 0.6rem, 2.5rem, 1.1rem, map-get($dots-color, "dot-small-purple"));
 }
 
 .svg-icons {
@@ -34,18 +40,14 @@
 }
 
 .aside-add-book {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-markup;
   height: 12rem;
   border-bottom: 0.1rem solid $aside-border-bottom-color;
   background-color: $aside-block-color;
 }
 
 .aside-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-markup;
   flex-direction: column;
   height: 24rem;
   margin-top: 0.4rem;
@@ -160,9 +162,7 @@
 }
 
 .btn-add {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-markup;
   width: 16rem;
   height: 4.4rem;
   border: 0.2rem solid $btn-add-color;
